@@ -1,1 +1,56 @@
-
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Student robotics project exploring a six-degree-of-freedom Stewart platform for payload stabilization.">
+  <title>Stewart Platform | Payload Stabilization</title>
+  <style>
+    :root { color-scheme: dark; --bg:#0b1020; --panel:#121a2e; --text:#edf2ff; --muted:#aab7d2; --accent:#8be9d0; }
+    * { box-sizing:border-box; }
+    body { margin:0; font:16px/1.65 system-ui,-apple-system,Segoe UI,sans-serif; background:radial-gradient(circle at 80% 0%,#1a3150 0,transparent 35%),var(--bg); color:var(--text); }
+    main { max-width:900px; margin:auto; padding:64px 22px; }
+    .tag { display:inline-block; border:1px solid #35516c; border-radius:99px; padding:5px 12px; color:var(--accent); font-size:.86rem; }
+    h1 { font-size:clamp(2.3rem,7vw,4.6rem); line-height:1.06; letter-spacing:-.04em; margin:22px 0; }
+    p { color:var(--muted); }
+    .hero { padding:34px 0 46px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:14px; margin:28px 0; }
+    .card { background:var(--panel); border:1px solid #25334d; border-radius:16px; padding:20px; }
+    .card h2 { font-size:1.05rem; margin-top:0; }
+    .card p { margin-bottom:0; }
+    a { color:var(--accent); }
+    footer { border-top:1px solid #25334d; margin-top:46px; padding-top:20px; color:var(--muted); font-size:.9rem; }
+    .note { border-left:3px solid var(--accent); padding:12px 16px; background:#101a2b; }
+  </style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <span class="tag">Student Robotics Project · IIT Mandi</span>
+    <h1>Intelligent Stewart Platform for Payload Stabilization</h1>
+    <p>A six-degree-of-freedom parallel-platform concept exploring coordinated actuation, IMU-based orientation sensing, inverse kinematics, and feedback control.</p>
+    <p><strong>Development stage:</strong> Early-stage design and simulation.</p>
+  </section>
+  <section>
+    <h2>What we're exploring</h2>
+    <div class="grid">
+      <article class="card"><h2>01 · Mechanical design</h2><p>A fixed base, moving platform, six actuators, and articulated joints designed in CAD.</p></article>
+      <article class="card"><h2>02 · Kinematics</h2><p>Mapping a desired platform pose to actuator lengths while respecting mechanical limits.</p></article>
+      <article class="card"><h2>03 · Simulation</h2><p>Using MATLAB to study platform motion, disturbances, and tracking performance.</p></article>
+      <article class="card"><h2>04 · Feedback control</h2><p>Investigating how orientation measurements can inform corrective actuator commands.</p></article>
+    </div>
+  </section>
+  <section>
+    <h2>Potential applications</h2>
+    <p>Camera mounts, sensor platforms, and other payloads that may benefit from orientation stabilization.</p>
+    <h2>Planned evaluation</h2>
+    <p>Orientation error, settling time, overshoot, repeatability, and actuator/joint-limit compliance.</p>
+    <p class="note">This is an early-stage student project. The design and control approach are under development; no performance claims are made before validation.</p>
+  </section>
+  <footer>
+    <p>Student project at IIT Mandi. This page describes a project in development and does not imply institutional endorsement.</p>
+    <p>Source repository: add your GitHub repository URL here after publishing.</p>
+  </footer>
+</main>
+</body>
+</html>
